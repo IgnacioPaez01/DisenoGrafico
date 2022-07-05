@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+*{
+    font-family:'Montserrat', sans-serif;
+    color: white;
+}
+
+body{
+    background-color:black;
+}
+
+h1{
+    font-size: 2.2em;
+}
+
+h2, h3{
+    font-size: 1.7em;
+}
+
+h5{
+    font-size: 0.9em;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*selectores de clases - universales del proyecto*/
+.textDorado{
+    color: wheat;
+}
+
+.textBlanco{
+    color: white;
+}
+
+.textNegro{
+    color: black;
+}
+
+.textGris{
+    color: rgb(92, 92, 92);
+}
+
+
+.bgNegro{
+    background-color: rgb(0, 0, 0);
+}
+
+.bgClaro{
+    background-color: rgba(225, 225, 225, 0.9)
+}
+
+.bgDorado{
+    background-color: rgb(142, 132, 114);
+}
+
+.XL{
+    font-weight: 600;
+}
+
+.L{
+    font-weight: 500;
+}
+
+.M{
+    font-weight: 400;
+}
+
+.S{
+    font-weight: 300;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.btnFooter{
+    font-size: 0.9em;
+    border-color: wheat;
+}
+
+.btnFooter:hover{
+    background-color: wheat;
+}
+
+.subrayadoCaja{
+    text-decoration: underline overline wheat;
+}
+
+/*NAV*/
+nav{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+    nav img{
+        width: 50px;
+    }
+
+    nav a{
+        font-size: 1em;
+        font-weight: 500;
+        color: white;
+    }
+/*END NAV*/
+
+
+/*INDEX*/
+/*header*/
+.presentacion{
+    width: 100%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 51%, rgba(34,0,33,0.700717787114846) 75%);
+}
+
+    .presentacion h1{
+        border-bottom: solid 0.5px rgb(38, 0, 39);
+    }
+
+    .presentacion p{
+        font-size: 1.2em;
+    }
+/*end header*/
+
+/*main*/
+section div ul li{
+    font-size: 1.1em;
+}
+
+div p{
+    font-size: 1.3em;
+
+}
+
+div p a{
+    text-decoration: none;
+}
+
+div p a:hover{
+    color: rgb(251, 236, 209);
+    text-decoration: underline;
+}
+/*END INDEX*/
+
+
+/*NOSOTROS*/
+#presentacionFr h2{
+    font-size: 1.4em;
+}
+
+#presentacionFr p{
+    font-size: 1em;
+}
+
+#equipodetrabajo h2,
+#equipodetrabajo h3{
+    font-size: 1.3em;
+}
+
+#equipodetrabajo p{
+    font-size: 1em;
+}
+
+
+#equipodetrabajo img{
+    border-radius: 50%;
+}
+/*END NOSOTROS*/
+
+
+/*SERVICIOS*/
+.wCard{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 20rem;
+}
+/*END SERVICIOS*/
+
+
+/*TRABAJO*/
+#trabajoMain{
+    grid-template-columns: 62% 27%;
+    grid-template-rows: auto;
+    grid-template-areas: "gif jpgUno" "gif jpgDos";
+    justify-content: center ;
+}
+
+.gif{
+    grid-area: gif;
+}
+
+.jpgUno{
+    grid-area: jpgUno;
+}
+
+.jpgDos{
+    grid-area: jpgDos;
+}
+
+
+.imgIndumentaria{
+    width: 24%;
+}
+/*END TRABAJO*/
+
+
+/*CONTACTO*/
+fieldset input{
+    margin: auto;
+    max-width: 400px;
+}
+
+.fontLabel{
+    font-size: 1.2em;
+}
+/*END CONTACTO*/
+
+
+
+
+@media (max-width: 1200px){
+    .imgIndumentaria{
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 992px){
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    h2, h3{
+        font-size: 1.3em;
+    }
+
+    h5{
+        font-size: 0.8em;
+    }
+
+    /*INDEX*/
+    /*header*/
+    .presentacion p{
+        font-size: 1em;
+    }
+    /*end header*/
+
+    /*main*/
+    section div ul li{
+        font-size: 1em;
+    }
+
+    div p{
+        font-size: 1.1em;
+    }
+    /*END INDEX*/
+
+
+    /*SERVICIOS*/
+    .wCard{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        width: 20rem;
+    }
+    /*END SERVICIOS*/
+
+
+    /*TRABAJO*/
+    .imgIndumentaria{
+        width: 45%;
+    }
+    /*END TRABAJO*/
+}
+
+
+
+
+
+@media (max-width: 577px){
+    h1{
+        font-size: 1.4em;
+    }
+
+    h2, h3{
+        font-size: 1em;
+    }
+
+    /*INDEX*/
+    .presentacion p{
+        font-size: 0.9em;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    /*END INDEX*/
+
+
+    /*NOSOTROS*/
+    .imgFluidXS{
+        width: 70%;
+    }
+
+    .xsFlex{
+        display: flex;
+    }
+
+    .order1{
+        order: 1;
+    }
+
+    .order2{
+        order: 2;
+    }
+    /*END NOSOTROS*/
+
+
+    /*SERVICIOS*/
+    .wCard{
+        width: 60vw;
+    }
+    /*END SERVICIOS*/
+
+
+
+    /*CONTACTO*/
+    fieldset input{
+        margin: auto;
+        max-width: 400px;
+    }
+
+    .fontLabel{
+        font-size: 0.9em;
+    }
+    /*END CONTACTO*/
+}
