@@ -1,0 +1,68 @@
+
+#presentacionFr{
+    div{
+        border: none;
+        h2{
+            @include texto(1.5em, $pesoXl, none);
+            .accordion-button{
+                @include texto(0.7em, $pesoL, none);
+                @extend .bgNegro;
+                background-color: map-get($map: $paletaColor, $key: 'negroSecundario')
+            }
+        }
+        p{
+            @include texto(1em, $pesoS, none);
+        }
+    }
+}
+
+
+#equipodetrabajo{
+    div{
+        h1{
+            @include texto(2em, $pesoXl, none);
+            @media (max-width: 992px){
+                @include texto (1.8em, $pesoXl, none);
+            }
+            @media (max-width: 577px){
+                @include texto (1.6em, $pesoXl, none);
+            }
+        }
+        div{
+            div{
+                h2{
+                    @include texto(1.5em, $pesoXl, none);
+                    @media (max-width: 577px){
+                        @include texto (1.2em, $pesoXl, none);
+                    }
+                }
+                h3{ 
+                    @include texto(1.3em, $pesoM, none);
+                    @media (max-width: 577px){
+                        @include texto (1em, $pesoM, none);
+                    }
+                }   
+                p{
+                    @include texto(1em, $pesoS, none);
+                }
+                img{
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    @media (max-width: 577px){
+        .imgFluidXS{
+            width: 70%;
+        }
+        .xsFlex{
+            display: flex;
+        }
+        .order1{
+            order: 1;
+        }
+        .order2{
+            order: 2;
+        }
+    }
+}

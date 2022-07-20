@@ -1,0 +1,57 @@
+header{
+    .presentacion{
+        width: 100%;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 51%, rgba(34,0,33,0.700717787114846) 75%);
+        h1{
+            @include texto (2.2em, $pesoXl, none);
+            border-bottom: solid 0.5px rgb(38, 0, 39);
+            @media (max-width: 992px){
+                @include texto (1.8em, $pesoXl, none);
+            }
+            @media (max-width: 577px){
+                @include texto (1.5em, $pesoXl, none);
+            }
+        }
+        h3{
+            @include texto (1.2em, $pesoM, none);
+            @media (max-width: 992px){
+                @include texto ( 1em, $pesoM, none);
+            }
+            @media (max-width: 577px){
+                @include texto (0.9em, $pesoM, none);
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+}
+
+
+main{
+    section{
+        div{
+            ul{
+                li{
+                    @include texto (1.1em, $pesoM, none);
+                }
+            }
+            h3{
+                @include texto (1.3em, $pesoL, none);
+                margin-bottom: 20px;
+                @media (max-width: 992px){
+                    @include texto (1.1em, $pesoL, none);
+                }
+                a{
+                    &:hover{
+                        color: map-get($map: $paletaColor, $key: 'doradoSecundario');
+                        @include texto (auto, auto ,$decorationSubrayado);
+                        @media (max-width: 992px){
+                            @include texto (1.1em, $pesoL, none);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

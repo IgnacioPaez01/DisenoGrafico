@@ -1,0 +1,60 @@
+//RESET
+*{
+    font-family: $fontPrincipal;
+    color: map-get($map:$paletaColor, $key:'blanco');
+}
+
+body{
+    background-color: map-get($map:$paletaColor, $key:'negro');
+}
+
+a{
+    text-decoration: $decorationNone;
+}
+//
+
+
+
+//CLASES
+.textDorado{
+    color: map-get($map:$paletaColor, $key:'dorado');
+}
+
+.textBlanco{
+    color: map-get($map:$paletaColor, $key:'blanco');
+}
+
+.textNegro{
+    color: map-get($map:$paletaColor, $key:'negro');
+}
+
+.textGris{
+    color: map-get($map:$paletaColor, $key:'gris');
+}
+
+.bgNegro{
+    background-color: map-get($map:$paletaColor, $key:'bgNegro');
+}
+
+.bgClaro{
+    background-color: map-get($map:$paletaColor, $key:'bgClaro');
+}
+
+.bgDorado{
+    background-color: map-get($map:$paletaColor, $key:'bgDorado');
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.btnFooter{
+    @include texto (1em, $pesoL, none);
+    color: map-get($map: $paletaColor, $key: 'blanco');
+    border-color: map-get($map: $paletaColor, $key: 'dorado'); 
+    &:hover{
+        color: map-get($map: $paletaColor, $key: 'negro');
+        background-color: map-get($map: $paletaColor, $key: 'bgDorado');
+    }
+}
+//

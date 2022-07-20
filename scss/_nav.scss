@@ -1,0 +1,22 @@
+nav{
+    background-color: map-get($map:$paletaColor, $key:'bgNegro');
+    a{
+        img{
+            width: 50px;
+        }
+    }
+    div{
+        ul{
+            li{
+                a{
+                    @include texto(1em, $pesoL, auto);
+                    &:hover{
+                        @extend .textBlanco;
+                        color: map-get($map: $paletaColor, $key: 'dorado') !important;
+                        text-decoration: $decorationSubrayado $decorationSobrerayado;
+                    }
+                }
+            }
+        }
+    }
+}

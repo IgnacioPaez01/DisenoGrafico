@@ -1,0 +1,17 @@
+footer{
+    div{
+        div{
+            h5{
+                @include texto (1em, $pesoS, none);
+                color: map-get($map: $paletaColor, $key: 'blanco');
+            }
+        }
+    }
+    h5{
+        color: map-get($map: $paletaColor, $key: 'gris');
+        @include texto (1em, $pesoS, none);
+        strong{
+            @include texto(1em, $pesoXl, none);
+        }
+    }
+}

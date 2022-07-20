@@ -1,0 +1,41 @@
+.headContacto{
+    h1{
+        @include texto (2.2em, $pesoXl, none);
+        @media (max-width: 992px){
+            @include texto (1.8em, $pesoXl, none);
+        }
+    }
+    h2{
+        @include texto (1.7rem, $pesoXl, none);
+        @media (max-width: 992px){
+            @include texto (1.5em, $pesoXl, none);
+        }
+    }
+}
+
+
+.mainContacto{
+    h2{
+        @include texto (1.7rem, $pesoM, none);
+    }
+    h3{
+        @include texto (1.5rem, $pesoM, none);
+        @media (max-width: 992px){
+            @include texto (1.3em, $pesoM, none);
+        }
+    }   
+    form{
+        fieldset{
+            input{
+            margin: auto;
+            max-width: 400px;
+            }
+            .fontLabel{
+                @include texto (1.2em, $pesoS, none);
+            }
+        }
+    }
+}
+
+
+

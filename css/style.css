@@ -1,359 +1,348 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  color: white; }
 
-*{
-    font-family:'Montserrat', sans-serif;
-    color: white;
-}
+body {
+  background-color: black; }
 
-body{
-    background-color:black;
-}
+a {
+  text-decoration: none; }
 
-h1{
-    font-size: 2.2em;
-}
+.textDorado {
+  color: wheat; }
 
-h2, h3{
-    font-size: 1.7em;
-}
+.textBlanco, nav div ul li a:hover {
+  color: white; }
 
-h5{
-    font-size: 0.9em;
-}
+.textNegro {
+  color: black; }
 
-a{
-    text-decoration: none;
-}
+.textGris {
+  color: #5c5c5c; }
 
-/*selectores de clases - universales del proyecto*/
-.textDorado{
-    color: wheat;
-}
+.bgNegro, #presentacionFr div h2 .accordion-button {
+  background-color: rgba(0, 0, 0, 0.5); }
 
-.textBlanco{
-    color: white;
-}
+.bgClaro {
+  background-color: rgba(225, 225, 225, 0.9); }
 
-.textNegro{
+.bgDorado {
+  background-color: #8e8472; }
+
+.pointer {
+  cursor: pointer; }
+
+.btnFooter {
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  border-color: wheat; }
+  .btnFooter:hover {
     color: black;
-}
+    background-color: #8e8472; }
 
-.textGris{
-    color: rgb(92, 92, 92);
-}
-
-
-.bgNegro{
-    background-color: rgb(0, 0, 0);
-}
-
-.bgClaro{
-    background-color: rgba(225, 225, 225, 0.9)
-}
-
-.bgDorado{
-    background-color: rgb(142, 132, 114);
-}
-
-.XL{
-    font-weight: 600;
-}
-
-.L{
+nav {
+  background-color: rgba(0, 0, 0, 0.5); }
+  nav a img {
+    width: 50px; }
+  nav div ul li a {
+    font-size: 1em;
     font-weight: 500;
-}
+    text-decoration: auto; }
+    nav div ul li a:hover {
+      color: wheat !important;
+      text-decoration: underline overline; }
 
-.M{
-    font-weight: 400;
-}
+footer div div h5 {
+  font-size: 1em;
+  font-weight: 300;
+  text-decoration: none;
+  color: white; }
 
-.S{
-    font-weight: 300;
-}
+footer h5 {
+  color: #5c5c5c;
+  font-size: 1em;
+  font-weight: 300;
+  text-decoration: none; }
+  footer h5 strong {
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none; }
 
-.pointer{
-    cursor: pointer;
-}
-
-.btnFooter{
-    font-size: 0.9em;
-    border-color: wheat;
-}
-
-.btnFooter:hover{
-    background-color: wheat;
-}
-
-.subrayadoCaja{
-    text-decoration: underline overline wheat;
-}
-
-/*NAV*/
-nav{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-    nav img{
-        width: 50px;
-    }
-
-    nav a{
-        font-size: 1em;
-        font-weight: 500;
-        color: white;
-    }
-/*END NAV*/
-
-
-/*INDEX*/
-/*header*/
-.presentacion{
-    width: 100%;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 51%, rgba(34,0,33,0.700717787114846) 75%);
-}
-
-    .presentacion h1{
-        border-bottom: solid 0.5px rgb(38, 0, 39);
-    }
-
-    .presentacion p{
-        font-size: 1.2em;
-    }
-/*end header*/
-
-/*main*/
-section div ul li{
-    font-size: 1.1em;
-}
-
-div p{
-    font-size: 1.3em;
-
-}
-
-div p a{
+header .presentacion {
+  width: 100%;
+  background: white;
+  background: radial-gradient(circle, white 51%, rgba(34, 0, 33, 0.700718) 75%); }
+  header .presentacion h1 {
+    font-size: 2.2em;
+    font-weight: 600;
     text-decoration: none;
-}
+    border-bottom: solid 0.5px #260027; }
+    @media (max-width: 992px) {
+      header .presentacion h1 {
+        font-size: 1.8em;
+        font-weight: 600;
+        text-decoration: none; } }
+    @media (max-width: 577px) {
+      header .presentacion h1 {
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration: none; } }
+  header .presentacion h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none; }
+    @media (max-width: 992px) {
+      header .presentacion h3 {
+        font-size: 1em;
+        font-weight: 400;
+        text-decoration: none; } }
+    @media (max-width: 577px) {
+      header .presentacion h3 {
+        font-size: 0.9em;
+        font-weight: 400;
+        text-decoration: none;
+        padding-left: 50px;
+        padding-right: 50px; } }
 
-div p a:hover{
-    color: rgb(251, 236, 209);
-    text-decoration: underline;
-}
-/*END INDEX*/
+main section div ul li {
+  font-size: 1.1em;
+  font-weight: 400;
+  text-decoration: none; }
 
+main section div h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 20px; }
+  @media (max-width: 992px) {
+    main section div h3 {
+      font-size: 1.1em;
+      font-weight: 500;
+      text-decoration: none; } }
+  main section div h3 a:hover {
+    color: #fbecd1;
+    font-size: auto;
+    font-weight: auto;
+    text-decoration: underline; }
+    @media (max-width: 992px) {
+      main section div h3 a:hover {
+        font-size: 1.1em;
+        font-weight: 500;
+        text-decoration: none; } }
 
-/*NOSOTROS*/
-#presentacionFr h2{
-    font-size: 1.4em;
-}
-
-#presentacionFr p{
+#presentacionFr div {
+  border: none; }
+  #presentacionFr div h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none; }
+    #presentacionFr div h2 .accordion-button {
+      font-size: 0.7em;
+      font-weight: 500;
+      text-decoration: none;
+      background-color: #050505; }
+  #presentacionFr div p {
     font-size: 1em;
-}
+    font-weight: 300;
+    text-decoration: none; }
 
-#equipodetrabajo h2,
-#equipodetrabajo h3{
-    font-size: 1.3em;
-}
+#equipodetrabajo div h1 {
+  font-size: 2em;
+  font-weight: 600;
+  text-decoration: none; }
+  @media (max-width: 992px) {
+    #equipodetrabajo div h1 {
+      font-size: 1.8em;
+      font-weight: 600;
+      text-decoration: none; } }
+  @media (max-width: 577px) {
+    #equipodetrabajo div h1 {
+      font-size: 1.6em;
+      font-weight: 600;
+      text-decoration: none; } }
 
-#equipodetrabajo p{
-    font-size: 1em;
-}
+#equipodetrabajo div div div h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration: none; }
+  @media (max-width: 577px) {
+    #equipodetrabajo div div div h2 {
+      font-size: 1.2em;
+      font-weight: 600;
+      text-decoration: none; } }
 
+#equipodetrabajo div div div h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+  text-decoration: none; }
+  @media (max-width: 577px) {
+    #equipodetrabajo div div div h3 {
+      font-size: 1em;
+      font-weight: 400;
+      text-decoration: none; } }
 
-#equipodetrabajo img{
-    border-radius: 50%;
-}
-/*END NOSOTROS*/
+#equipodetrabajo div div div p {
+  font-size: 1em;
+  font-weight: 300;
+  text-decoration: none; }
 
+#equipodetrabajo div div div img {
+  border-radius: 50%; }
 
-/*SERVICIOS*/
-.wCard{
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    width: 20rem;
-}
+@media (max-width: 577px) {
+  #equipodetrabajo .imgFluidXS {
+    width: 70%; }
+  #equipodetrabajo .xsFlex {
+    display: flex; }
+  #equipodetrabajo .order1 {
+    order: 1; }
+  #equipodetrabajo .order2 {
+    order: 2; } }
 
-@keyframes animationServ{
-    0%{border-radius: 0%;}
-    10%{border-radius: 5%;}
-    20%{border-radius: 10%;}
-    30%{border-radius: 15%;}
-    40%{border-radius: 20%;}
-    50%{border-radius: 25%;}
-    60%{border-radius: 30;}
-    70%{border-radius: 35%;}
-    80%{border-radius: 40%;}
-    90%{border-radius: 45%;}
-    100%{border-radius: 50%;}
-}
+.titleServicios h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+  text-decoration: underline #fbecd1; }
+  @media (max-width: 992px) {
+    .titleServicios h1 {
+      font-size: 2em;
+      font-weight: 600;
+      text-decoration: underline #fbecd1; } }
 
-.animationCard{
-    animation-name: animationServ;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-duration: 3s;
-}
+.cardServicios h2 {
+  font-size: 1.7em;
+  font-weight: 500;
+  text-decoration: none; }
 
+.cardServicios .wCard {
+  background-color: rgba(225, 225, 225, 0.9);
+  border-radius: 50%;
+  width: 20rem; }
+  @media (max-width: 577px) {
+    .cardServicios .wCard {
+      width: 60vw; } }
 
-/*END SERVICIOS*/
+@keyframes animationServ {
+  0% {
+    border-radius: 0%; }
+  10% {
+    border-radius: 5%; }
+  20% {
+    border-radius: 10%; }
+  30% {
+    border-radius: 15%; }
+  40% {
+    border-radius: 20%; }
+  50% {
+    border-radius: 25%; }
+  60% {
+    border-radius: 30; }
+  70% {
+    border-radius: 35%; }
+  80% {
+    border-radius: 40%; }
+  90% {
+    border-radius: 45%; }
+  100% {
+    border-radius: 50%; } }
 
+.cardServicios .animationCard {
+  animation-name: animationServ;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-duration: 3s; }
 
 /*TRABAJO*/
-#trabajoMain{
-    grid-template-columns: 62% 27%;
-    grid-template-rows: auto;
-    grid-template-areas: "gif jpgUno" "gif jpgDos";
-    justify-content: center ;
-}
+#trabajoMain div h1 {
+  font-size: 2em;
+  font-weight: 600;
+  text-decoration: none; }
+  @media (max-width: 992px) {
+    #trabajoMain div h1 {
+      font-size: 1.8em;
+      font-weight: 600;
+      text-decoration: none; } }
 
-.gif{
-    grid-area: gif;
-}
+#trabajoMain div h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-decoration: none; }
 
-.jpgUno{
-    grid-area: jpgUno;
-}
+#trabajoMain .formaTrabajo {
+  grid-template-columns: 62% 27%;
+  grid-template-rows: auto;
+  grid-template-areas: "gif jpgUno" "gif jpgDos";
+  justify-content: center; }
+  #trabajoMain .formaTrabajo .gif {
+    grid-area: gif; }
+  #trabajoMain .formaTrabajo .jpgUno {
+    grid-area: jpgUno; }
+  #trabajoMain .formaTrabajo .jpgDos {
+    grid-area: jpgDos; }
 
-.jpgDos{
-    grid-area: jpgDos;
-}
+.indumentaria h2 {
+  font-size: 2em;
+  font-weight: 600;
+  text-decoration: none; }
+  @media (max-width: 992px) {
+    .indumentaria h2 {
+      font-size: 1.7em;
+      font-weight: 600;
+      text-decoration: none; } }
 
+.indumentaria .imgIndumentaria {
+  width: 24%; }
+  @media (max-width: 1200px) {
+    .indumentaria .imgIndumentaria {
+      width: 30%; } }
+  @media (max-width: 991px) {
+    .indumentaria .imgIndumentaria {
+      width: 40%; } }
 
-.imgIndumentaria{
-    width: 24%;
-}
-/*END TRABAJO*/
+.headContacto h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+  text-decoration: none; }
+  @media (max-width: 992px) {
+    .headContacto h1 {
+      font-size: 1.8em;
+      font-weight: 600;
+      text-decoration: none; } }
 
+.headContacto h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-decoration: none; }
+  @media (max-width: 992px) {
+    .headContacto h2 {
+      font-size: 1.5em;
+      font-weight: 600;
+      text-decoration: none; } }
 
-/*CONTACTO*/
-fieldset input{
-    margin: auto;
-    max-width: 400px;
-}
+.mainContacto h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-decoration: none; }
 
-.fontLabel{
-    font-size: 1.2em;
-}
-/*END CONTACTO*/
+.mainContacto h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none; }
+  @media (max-width: 992px) {
+    .mainContacto h3 {
+      font-size: 1.3em;
+      font-weight: 400;
+      text-decoration: none; } }
 
+.mainContacto form fieldset input {
+  margin: auto;
+  max-width: 400px; }
 
-
-
-@media (max-width: 1200px){
-    .imgIndumentaria{
-        width: 30%;
-    }
-}
-
-
-@media (max-width: 992px){
-
-    h1{
-        font-size: 1.8em;
-    }
-
-    h2, h3{
-        font-size: 1.3em;
-    }
-
-    h5{
-        font-size: 0.8em;
-    }
-
-    /*INDEX*/
-    /*header*/
-    .presentacion p{
-        font-size: 1em;
-    }
-    /*end header*/
-
-    /*main*/
-    section div ul li{
-        font-size: 1em;
-    }
-
-    div p{
-        font-size: 1.1em;
-    }
-    /*END INDEX*/
-
-
-    /*SERVICIOS*/
-    .wCard{
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
-        width: 20rem;
-    }
-    /*END SERVICIOS*/
-
-
-    /*TRABAJO*/
-    .imgIndumentaria{
-        width: 45%;
-    }
-    /*END TRABAJO*/
-}
-
-
-
-
-
-@media (max-width: 577px){
-    h1{
-        font-size: 1.4em;
-    }
-
-    h2, h3{
-        font-size: 1em;
-    }
-
-    /*INDEX*/
-    .presentacion p{
-        font-size: 0.9em;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    /*END INDEX*/
-
-
-    /*NOSOTROS*/
-    .imgFluidXS{
-        width: 70%;
-    }
-
-    .xsFlex{
-        display: flex;
-    }
-
-    .order1{
-        order: 1;
-    }
-
-    .order2{
-        order: 2;
-    }
-    /*END NOSOTROS*/
-
-
-    /*SERVICIOS*/
-    .wCard{
-        width: 60vw;
-    }
-    /*END SERVICIOS*/
-
-
-
-    /*CONTACTO*/
-    fieldset input{
-        margin: auto;
-        max-width: 400px;
-    }
-
-    .fontLabel{
-        font-size: 0.9em;
-    }
-    /*END CONTACTO*/
-}
+.mainContacto form fieldset .fontLabel {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-decoration: none; }

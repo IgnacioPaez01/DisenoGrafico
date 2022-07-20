@@ -1,0 +1,47 @@
+/*TRABAJO*/
+#trabajoMain{
+    div{
+        h1{
+            @include texto (2em, $pesoXl, none);
+            @media (max-width: 992px){
+                @include texto (1.8em, $pesoXl, none);
+            }
+        }
+        h3{
+            @include texto (1.5em, $pesoL,none);
+        }
+    }
+    .formaTrabajo{
+        grid-template-columns: 62% 27%;
+        grid-template-rows: auto;
+        grid-template-areas: "gif jpgUno" "gif jpgDos";
+        justify-content: center;
+        .gif{
+            grid-area: gif;
+        }
+        .jpgUno{
+            grid-area: jpgUno;
+        }
+        .jpgDos{
+            grid-area: jpgDos;
+        }
+    }
+}
+
+.indumentaria{
+    h2{
+        @include texto (2em, $pesoXl, none);
+        @media (max-width: 992px){
+            @include texto (1.7em, $pesoXl, none);
+        }
+    }
+    .imgIndumentaria{
+        width: 24%;
+        @media (max-width: 1200px){
+            width: 30%;
+        }
+        @media (max-width: 991px){
+            width: 40%;
+        }
+    }
+}
