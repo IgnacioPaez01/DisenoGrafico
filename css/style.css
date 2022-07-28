@@ -52,8 +52,7 @@ nav {
     font-weight: 500;
     text-decoration: auto; }
     nav div ul li a:hover {
-      color: wheat !important;
-      text-decoration: underline overline; }
+      color: wheat !important; }
 
 footer div div h5 {
   font-size: 1em;
@@ -256,7 +255,6 @@ main section div h3 {
   animation-delay: 0s;
   animation-duration: 3s; }
 
-/*TRABAJO*/
 #trabajoMain div h1 {
   font-size: 2em;
   font-weight: 600;

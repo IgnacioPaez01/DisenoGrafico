@@ -13,7 +13,6 @@ nav{
                     &:hover{
                         @extend .textBlanco;
                         color: map-get($map: $paletaColor, $key: 'dorado') !important;
-                        text-decoration: $decorationSubrayado $decorationSobrerayado;
                     }
                 }
             }

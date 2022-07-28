@@ -7,12 +7,12 @@
             .accordion-button{
                 @include texto(0.7em, $pesoL, none);
                 @extend .bgNegro;
-                background-color: map-get($map: $paletaColor, $key: 'negroSecundario')
+                background-color: map-get($map: $paletaColor, $key: 'negroSecundario');
             }
         }
-        p{
-            @include texto(1em, $pesoS, none);
-        }
+    }
+    p{
+        @include texto(1em, $pesoS, none);
     }
 }
 
@@ -41,9 +41,6 @@
                     @media (max-width: 577px){
                         @include texto (1em, $pesoM, none);
                     }
-                }   
-                p{
-                    @include texto(1em, $pesoS, none);
                 }
                 img{
                     border-radius: 50%;
